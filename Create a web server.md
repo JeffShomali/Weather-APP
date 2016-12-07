@@ -78,3 +78,8 @@
 
 # Weather App
 - Install `react-router` dependency:`npm install react-router@2.0.0 --save`
+- Initiate `Route` to `react-router` and load all modules
+- Pass React Router to main render
+- Define indivitiual route
+- Create `Main` component in app/components/ directory and load it in app/app.jsx
+- Create `alias` for Main components in webpack config file before load it in App.js after created alias lrun the server with `webpack` command.
