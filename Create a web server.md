@@ -76,10 +76,12 @@
      5. Adding default root with `root` and `alias` for require without specified path.
      6. Run the `webpack -w` for listening to all changes and rebundle automatically, but need to run npm server.js in different terminal tab.
 
-# Weather App
+# Weather App (react-router)
 - Install `react-router` dependency:`npm install react-router@2.0.0 --save`
 - Initiate `Route` to `react-router` and load all modules
 - Pass React Router to main render
 - Define indivitiual route
 - Create `Main` component in app/components/ directory and load it in app/app.jsx
-- Create `alias` for Main components in webpack config file before load it in App.js after created alias lrun the server with `webpack` command.
+- Create `alias` for Main components in webpack config file before load it in App.js after created alias run the server with `webpack` command.
+- Create some other components like `About` and `Weather` and `examples` and then make alias for them and update webpack with `webpack -w`
+for more about [react-router]("https://github.com/ReactTraining/react-router")
