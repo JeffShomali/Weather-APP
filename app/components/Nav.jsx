@@ -10,6 +10,7 @@ var Nav = React.createClass({
                <Link to="/about" activeClassName="active" activeStyle={{fontWeight: "bold"}}>About</Link>
                <Link to="/examples" activeClassName="active" activeStyle={{fontWeight: "bold"}}>Examples</Link>
           </div>
+
      );
 }
 });
