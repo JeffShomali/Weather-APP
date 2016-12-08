@@ -85,3 +85,8 @@
 - Create `alias` for Main components in webpack config file before load it in App.js after created alias run the server with `webpack` command.
 - Create some other components like `About` and `Weather` and `examples` and then make alias for them and update webpack with `webpack -w`
 for more about [react-router]("https://github.com/ReactTraining/react-router")
+
+*Why <Link>*
+- Why should use `<Link to="/examples">Examples</Link>` instead of `<a href="#/">Some Link Here </a>` ? Because have extra handy features like adding  more stile into the link to customer know which page they are on.
+ex: `<IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: "bold"}}>Get Weather</IndexLink>
+>`
