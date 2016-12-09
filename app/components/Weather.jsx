@@ -3,19 +3,29 @@ var WeatherForm = require('WeatherForm');
 var WeatherMessage = require('WeatherMessage');
 
 var Weather = React.createClass({
+     getInitialState: function () {
+          return {
+               location: "Miami",
+               temp: 88
+          }
+     },
+     handleSearch: function (location) {
+          this.setState({
+               location: location,
+               temp: 23
+          });
+     },
      render: function() {
+          var {temp, location} = this.state;
           return (
                  <div>
                       <h1>Get Weather</h1>
-                      <WeatherForm />
+                      <WeatherForm onSearch={this.handleSearch}/>
                       <br />
-                      <WeatherMessage />
+                      <WeatherMessage location={location} temp={temp} />
                  </div>
           )
      }
 });
 
 module.exports = Weather;
-
-
-http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=b954e8374f1fcb5b5cf8681917f68e62&units=imperial

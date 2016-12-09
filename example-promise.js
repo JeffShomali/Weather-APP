@@ -35,5 +35,7 @@ addPromise(10,12).then(function(sum){
 addPromise("jeff", 9).then(function (sum) {
      console.log('this is not showing in console');
 }, function(err) {
-     console.log('This error is showin in console', err);
+     console.log('This error is showing in console', err);
 });
+
+// http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=b954e8374f1fcb5b5cf8681917f68e62&units=imperial
