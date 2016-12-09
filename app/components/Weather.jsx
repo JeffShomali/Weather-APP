@@ -16,3 +16,6 @@ var Weather = React.createClass({
 });
 
 module.exports = Weather;
+
+
+http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=b954e8374f1fcb5b5cf8681917f68e62&units=imperial
