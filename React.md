@@ -90,3 +90,7 @@ for more about [react-router]("https://github.com/ReactTraining/react-router")
 - Why should use `<Link to="/examples">Examples</Link>` instead of `<a href="#/">Some Link Here </a>` ? Because have extra handy features like adding  more stile into the link to customer know which page they are on.
 ex: `<IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: "bold"}}>Get Weather</IndexLink>
 >`
+
+# API in React
+1. instal axios library for fetching data with `npm install axios --save`
+2. Generate base url
