@@ -94,3 +94,8 @@ ex: `<IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: "bold"
 # API in React
 1. instal axios library for fetching data with `npm install axios --save`
 2. Generate base url
+
+# Debugging
+- Using React developer tools built by Facebook
+- use `debgugger;` keyword to create a break point on specific location.
+- use `devtool: 'cheap-module-eval-source-map'` inside webpack config file to show our real code instead of bunch of bundle source.
