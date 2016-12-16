@@ -80,7 +80,7 @@
 - Install `react-router` dependency:`npm install react-router@2.0.0 --save`
 - Initiate `Route` to `react-router` and load all modules
 - Pass React Router to main render
-- Define indivitiual route
+- Define individual route
 - Create `Main` component in app/components/ directory and load it in app/app.jsx
 - Create `alias` for Main components in webpack config file before load it in App.js after created alias run the server with `webpack` command.
 - Create some other components like `About` and `Weather` and `examples` and then make alias for them and update webpack with `webpack -w`
@@ -91,11 +91,14 @@ for more about [react-router]("https://github.com/ReactTraining/react-router")
 ex: `<IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: "bold"}}>Get Weather</IndexLink>
 >`
 
-# API in React
+###### API in React
 1. instal axios library for fetching data with `npm install axios --save`
 2. Generate base url
 
-# Debugging
+###### Debugging
 - Using React developer tools built by Facebook
 - use `debgugger;` keyword to create a break point on specific location.
 - use `devtool: 'cheap-module-eval-source-map'` inside webpack config file to show our real code instead of bunch of bundle source.
+###### Arrow '=>' function
+why use arrow function ?
+Is ES6 shorthand style for any function. Is same to anonymous function but uses parent *this* binding inside a function, so use `=>` function instead of `anonymous`,`this`, `return` function inside the components.
