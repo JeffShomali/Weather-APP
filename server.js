@@ -4,13 +4,14 @@ var express = require('express');
 var app = express();
 
 // If is local use port 3000 else use env.PORT
-const PORT = proccess.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
      if (req.headers['x-forwarded-proto'] === 'http'){
-          next();
-     }else {
           res.redirect('http://' + req.hostname + req.url);
+
+     }else {
+          next();
      }
 });
 
@@ -18,6 +19,6 @@ app.use(function(req, res, next) {
 app.use(express.static('public'));
 
 // Start the server
-app.listen(PORT, function(){
+app.listen(PORT, function() {
      console.log("Express server is up on port " + PORT);
 });
